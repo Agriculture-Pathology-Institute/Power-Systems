@@ -1,0 +1,31 @@
+# Append this configuration structure inside your global config.yaml workspace file:
+
+# =========================================================================
+# DOMAIN ZONE: UNIVAC SSPC HISTORICAL VOLTAGE INFRASTRUCTURE MATRIX
+# Maps solid-state electrical profiles to specific engineering use-cases
+# =========================================================================
+univac_sspc_voltage_matrix:
+  profile_01_automation_bus_dc:
+    voltage_nominal: 24.0
+    voltage_ceiling: 48.0
+    primary_utility_use: "Electronic safety locks, magnetic strikes, and low-voltage sensor nets"
+    
+  profile_02_split_phase_utility_ac:
+    voltage_nominal: 120.0
+    voltage_ceiling: 240.0
+    primary_utility_use: "Facility facility lighting, garage door actuators, and gate winches"
+    
+  profile_03_three_phase_low_rail_ac:
+    voltage_nominal: 208.0
+    voltage_ceiling: 240.0
+    primary_utility_use: "Medium-capacity crop shakers and water sorting conveyor sorting pumps"
+    
+  profile_04_three_phase_high_rail_ac:
+    voltage_nominal: 480.0
+    voltage_ceiling: 480.0
+    primary_utility_use: "Heavy industrial 70A food mixers and high-pressure water cannons"
+    
+  profile_05_renewable_turbine_grid_ac:
+    voltage_nominal: 690.0
+    voltage_ceiling: 690.0
+    primary_utility_use: "Direct input connection from GE wind turbine generation and load dumps"
