@@ -1,0 +1,14 @@
+# Append this configuration structure inside your global config.yaml workspace file:
+
+# =========================================================================
+# DOMAIN ZONE: UNIVAC SSPC HISTORICAL CURRENT CAPACITIES
+# Maps solid-state electrical breaker tiers to real-world Amperage limits
+# =========================================================================
+univac_sspc_current_ranges:
+  tier_01_light_duty_continuous_amps: 15.0     # Mapped to electronic strikes and security locks
+  tier_02_standard_drive_continuous_amps: 35.0  # Mapped to heavy garage doors and gate winches
+  tier_03_heavy_industrial_continuous_amps: 70.0 # Mapped to high-torque farm mixers and sprayers
+  tier_04_substation_main_feeder_amps: 125.0    # Absolute solid-state main breaker limit ceiling
+  
+  # Solid-state thermal protection limits
+  gate_junction_temperature_max_celsius: 125.0 # Thermal safety ceiling inside the welded shell
